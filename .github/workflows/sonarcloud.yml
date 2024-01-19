@@ -37,7 +37,7 @@ jobs:
         run: npm run build
 
       - name: SonarCloud Scan
-        uses: SonarSource/sonarcloud-github-action@develop
+        uses: SonarSource/sonarcloud-github-action@master
         with:
           args: >
             -Dsonar.login=${{ secrets.MILESTONE_POSTCOMMIT_SONARSCAN }}
