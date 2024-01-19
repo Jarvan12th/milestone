@@ -40,5 +40,5 @@ jobs:
         uses: SonarSource/sonarcloud-github-action@master
         with:
           args: >
-            -Dsonar.login=${{ secrets.MILESTONE_POSTCOMMIT_SONARSCAN }}
+            -Dsonar.login=${{ secrets.SONAR_TOKEN }}
             -Dsonar.host.url=https://sonarcloud.io
